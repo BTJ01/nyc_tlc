@@ -1,4 +1,4 @@
-# New York City - Taxi & Limo Commission: Yellow Taxi Trip Records
+# New York City - Taxi & Limo Commission:<br/>Yellow Taxi Trip Records
 #### [Source Data & Documentation](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets)
 
 ## Objective
