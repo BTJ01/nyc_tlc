@@ -1,18 +1,19 @@
-# nyc_tlc
-#### Source Data & Documentation:
-[NYC Taxi &amp; Limo Commission - yellow taxi trip records](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets)
+# New York City - Taxi & Limo Commission: Yellow Taxi Trip Records
+#### [Source Data & Documentation](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-taxi-yellow?tabs=azureml-opendatasets)
 
 ## Objective
 Create a scalable, easily maintainable solution that does the following: 
-- [x] 1. Ingests the dataset (NYC Taxi and Limousine yellow dataset) 
-- [ ] 2. Summarizes:
+- [x] Ingests the dataset (NYC Taxi and Limousine yellow dataset) 
+- [ ] Summarizes:
   - [ ] Mean/median costs, prices and passenger counts.
   - [ ] Aggregate by payment type, year, month. 
-- [ ] 4. Results are output in csv or parquet format
-- [ ] 5. Includes source code and a ReadMe File with information on how to run your script and any other dependencies.
+- [ ] Results are output in csv or parquet format
+- [ ] Includes source code and a ReadMe File with information on how to run your script and any other dependencies.
 
 ## Approach used to complete assignment
-1. Review NYC TLC Documentation. Noteworthy details:
+1. Review NYC TLC Documentation.
+   
+   *Noteworthy details:*
    - Timeframe: 2009 to 2018
    - Format: Parquet
    - Size: ~50 GB, roughly 1.5B rows as of 2018
@@ -26,9 +27,10 @@ Create a scalable, easily maintainable solution that does the following:
    - region: East US
 4. Launch workspace
 5. Create & configure Personal Compute Cluster
-6. Create Notebook (NYC_TLC)
-7. Ingest data using spark sample from documentation listed above
-8. Review data dictionary and document what's needed
+6. Launch compute cluster
+7. Create Notebook (NYC_TLC)
+8. Ingest data using spark sample from documentation listed above
+9. Review data dictionary and document what's needed
 
 ### Columns Required + notes:
  * vendor: `vendorID`
