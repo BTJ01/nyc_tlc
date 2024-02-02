@@ -60,7 +60,7 @@ Final output results are saved as CSV file: [nyc_tlc_output](https://github.com/
 I decided to create a quick bar chart that shows average payment by type and date
 
 <img
-  src="https://github.com/BTJ01/nyc_tlc/blob/nyc_tlc/avg_tot_amount_by_payment_type_and_date.png"
+  src="https://github.com/BTJ01/nyc_tlc/blob/main/avg_tot_amount_by_payment_type_and_date.png"
   title="Average Total Amount by Payment Type and Date"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
