@@ -33,7 +33,9 @@ Create a scalable, easily maintainable solution that does the following:
 8. Create Notebook (NYC_TLC)
    - Ingest data (used modified spark sample from documentation)
    - Review relevant columns
+   - Transform paymentType for consistency and proper grouping
    - Find mean & median using Spark SQL & pySpark
+   - Filter on year range based on documentation
 
 ### Columns of Interest + notes:
  * payment type: `paymentType` - very messy/inconsistent field, requires transforms
