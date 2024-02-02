@@ -39,7 +39,7 @@ Create a scalable, easily maintainable solution that does the following:
  * vendor: `vendorID` - Three letter code indicating vendor, 7 codes
  * payment type: `paymentType` - alpha code indicating how passenger paid (CSH, CRD, etc)
  * passengers: `passengerCount` - # of passengers in the vehicle, driver-entered value
- * dates: `puMonth` , `puYear`
+ * dates: `puMonth`, `puYear`
  * financial:
     - `extra` - $0.50 and $1 rush hour and overnight charges
     - `fareAmount` - time-and-distance fare calculated by the meter.
