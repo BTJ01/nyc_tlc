@@ -55,7 +55,7 @@ Create a scalable, easily maintainable solution that does the following:
 
 ## Results
 
-Final output results are saved as CSV file: [nyc_tlc_output](https://github.com/BTJ01/nyc_tlc/blob/nyc_tlc/nyc_tlc_output.csv))
+Final output results are saved as CSV file: [nyc_tlc_output](https://github.com/BTJ01/nyc_tlc/blob/nyc_tlc/nyc_tlc_output.csv)
 
 I decided to create a quick bar chart that shows average payment by type and date
 
