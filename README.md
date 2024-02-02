@@ -10,8 +10,8 @@ Create a scalable, easily maintainable solution that does the following:
 - [ ] Results are output in csv or parquet format
 - [ ] Includes source code and a ReadMe File with information on how to run your script and any other dependencies.
 
-## Approach used to complete assignment
-1. Review NYC TLC Documentation.
+## Approach
+1. Review NYC TLC Documentation
    
    *Noteworthy details:*
    - Timeframe: 2009 to 2018
@@ -19,20 +19,22 @@ Create a scalable, easily maintainable solution that does the following:
    - Size: ~50 GB, roughly 1.5B rows as of 2018
    - Azure Region: East US 
    - data dictionary is **not 100% accurate**
-     - e.g. vendorID listed twice, as `string` & `int`, desc for both entries matches `int` entry, but the field in the table is string
+     - e.g. vendorID listed twice, as `string` & `int`, the description for both entries matches `int` entry, but the field data type in the table is `string`
 2. Create Microsoft Account and sign into Azure Portal
 3. Create & configure an Azure Databricks workspace instance 
    - name: gray_matter
    - resource group: nyc_tlc
    - region: East US
+   - runtime version: 14.2 ML (includes Apache Spark 3.5.0, Scala 2.12)
+   - node type: standard_ds3_v2, 14 GB, 4 cores
 4. Launch workspace
 5. Create & configure Personal Compute Cluster
 6. Launch compute cluster
 7. Create Notebook (NYC_TLC)
-8. Ingest data using spark sample from documentation listed above
-9. Review data dictionary and document what's needed
+8. Ingest data (used modified spark sample from documentation)
+9. Review data dictionary and document column requirments and notes
 
-### Columns Required + notes:
+### Column Requirements + notes:
  * vendor: `vendorID`
  * payment type: `paymentType`
  * passengers: `passengerCount` - # of passengers in the vehicle, driver-entered value
