@@ -18,7 +18,7 @@ Create a scalable, easily maintainable solution that does the following:
    - Azure Region: East US 
    - data dictionary is **not 100% accurate**
      - *ex1*: vendorID listed twice, as `string` & `int`, the description for both entries matches `int` entry, but the field data type in the table is `string`
-     - *ex2*: paymentType has datatype `string`, but description mentions "numeric code signifying how the passenger paid for the trip" - description is innaccurate/outdated based on `string` values in the actual data
+     - *ex2*: paymentType has datatype `string`, but description mentions "numeric code signifying how the passenger paid for the trip" - description is innaccurate/outdated
 2. Create Microsoft Account and sign into Azure Portal - $200 free credits with new accounts!
 3. Create & configure an Azure Databricks workspace instance 
    - *name*: gray_matter
@@ -37,7 +37,7 @@ Create a scalable, easily maintainable solution that does the following:
 
 ### Columns of Interest + notes:
  * vendor: `vendorID` - Three letter code indicating vendor, 7 codes
- * payment type: `paymentType` - alpha code indicating how passenger paid (CSH, CRD, etc)
+ * payment type: `paymentType` - very messy/inconsistent field, requires transforms
  * passengers: `passengerCount` - # of passengers in the vehicle, driver-entered value
  * dates: `puMonth`, `puYear`
  * financial:
