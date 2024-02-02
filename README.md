@@ -36,11 +36,10 @@ Create a scalable, easily maintainable solution that does the following:
    - Find mean & median using Spark SQL & pySpark
 
 ### Columns of Interest + notes:
- * vendor: `vendorID` - Three letter code indicating vendor, 7 codes
  * payment type: `paymentType` - very messy/inconsistent field, requires transforms
  * passengers: `passengerCount` - # of passengers in the vehicle, driver-entered value
  * dates: `puMonth`, `puYear`
- * financial:
+ * financials:
     - `extra` - $0.50 and $1 rush hour and overnight charges
     - `fareAmount` - time-and-distance fare calculated by the meter.
     - `improvementSurcharge` - 0.30 improvement surcharge assessed trips at the flag drop. 
