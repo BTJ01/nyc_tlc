@@ -29,7 +29,7 @@ Create a scalable, easily maintainable solution that does the following:
    - *runtime version*: 14.2 ML (includes Apache Spark 3.5.0, Scala 2.12)
    - *node type*: standard_ds3_v2, 14 GB, 4 cores
 6. Launch compute cluster
-7. Review data dictionary and document column requirments and notes (see below)
+7. Review data dictionary and document column requirements and notes (see below)
 8. Create Notebook (NYC_TLC)
    - Ingest data (used modified spark sample from documentation)
    - Review relevant columns
@@ -41,7 +41,7 @@ Create a scalable, easily maintainable solution that does the following:
  * payment type: `paymentType` - very messy/inconsistent field, requires transforms
  * passengers: `passengerCount` - # of passengers in the vehicle, driver-entered value
  * dates: `puMonth`, `puYear`
- * financials:
+ * financial:
     - `extra` - $0.50 and $1 rush hour and overnight charges
     - `fareAmount` - time-and-distance fare calculated by the meter.
     - `improvementSurcharge` - 0.30 improvement surcharge assessed trips at the flag drop. 
@@ -57,7 +57,7 @@ Create a scalable, easily maintainable solution that does the following:
 
 Final output results are saved as CSV file: [nyc_tlc_output](https://github.com/BTJ01/nyc_tlc/blob/nyc_tlc/nyc_tlc_output.csv)
 
-I decided to create a quick bar chart that shows average total payment (not indcluding tips) by type and date
+I decided to create a quick bar chart that shows average total payment (not including tips) by type and date
 
 <img
   src="https://github.com/BTJ01/nyc_tlc/blob/main/avg_tot_amount_by_payment_type_and_date.png"
