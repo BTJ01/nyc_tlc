@@ -18,7 +18,7 @@ Create a scalable, easily maintainable solution that does the following:
    - Azure Region: East US 
    - data dictionary is **not 100% accurate**
      - *ex1*: vendorID listed twice, as `string` & `int`, the description for both entries matches `int` entry, but the field data type in the table is `string`
-     - *ex2*: paymentType has datatype `string`, but description mentions "numeric code signifying how the passenger paid for the trip" - description is innaccurate/outdated
+     - *ex2*: paymentType has datatype `string`, but description mentions "numeric code signifying how the passenger paid for the trip" - the data is highly inconsistent (1,CAS, CSH, CASH, cash, etc) and requires transform
 2. Create Microsoft Account and sign into Azure Portal - $200 free credits with new accounts!
 3. Create & configure an Azure Databricks workspace instance 
    - *name*: gray_matter
@@ -57,7 +57,7 @@ Create a scalable, easily maintainable solution that does the following:
 
 Final output results are saved as CSV file: [nyc_tlc_output](https://github.com/BTJ01/nyc_tlc/blob/nyc_tlc/nyc_tlc_output.csv)
 
-I decided to create a quick bar chart that shows average payment by type and date
+I decided to create a quick bar chart that shows average total payment (not indcluding tips) by type and date
 
 <img
   src="https://github.com/BTJ01/nyc_tlc/blob/main/avg_tot_amount_by_payment_type_and_date.png"
